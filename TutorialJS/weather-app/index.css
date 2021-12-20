@@ -31,4 +31,63 @@
   border: 0;
   outline: 0;
   padding: 3px 3px 3px 20px;
+  /* background default is white color, set transparent is visible */
+  background: transparent;
+  height: 20px;
+  color: white;
+}
+
+#search-input::placeholder {
+  color: rgb(206, 206, 206);
+}
+.infor-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  padding: 80px 50px;
+}
+.city-name {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.weather-status {
+  font-size: 14px;
+}
+.weather-icon {
+  width: 70px;
+  height: 70px;
+}
+.temperature {
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 1;
+  position: relative;
+}
+.temperature::after {
+  content: "o";
+  position: absolute;
+  font-size: 30px;
+}
+.additional-section {
+  border-top: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.additional-section .row {
+  margin-bottom: 5px;
+  display: flex;
+}
+.additional-section .item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.additional-section .item .label {
+  font-weight: bold;
 }
