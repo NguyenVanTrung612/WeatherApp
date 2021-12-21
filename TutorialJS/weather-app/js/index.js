@@ -33,7 +33,7 @@ searchInput.addEventListener("change", (event) => {
     sunset.innerHTML =
       moment.unix(data.sys.sunset).format("H:mm") || DEFAULT_VALUE;
     humidity.innerHTML = data.main.humidity || DEFAULT_VALUE;
-    // convert m/h => km/h to * 3.6
+    // convert m/h => km/h to * 3.6  keep two number
     windSpeed.innerHTML = (data.wind.speed * 3.6).toFixed(2) || DEFAULT_VALUE;
   });
 });
